@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/new4"
+    android:id="@+id/activity_payment_portal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hello.airindia.PaymentPORTAL">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:background="@drawable/roundtextview"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:paddingTop="3dp"
+        android:text="PAYMENT PORTAL"
+        android:id="@+id/textView2" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:orientation="vertical"
+        android:id="@+id/Radio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" >
+
+        <RadioButton
+            android:text="CREDIT CARD"
+            android:textSize="20dp"
+            android:textColor="@color/darkblue"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/radioButton5"
+            android:layout_below="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup" />
+        <RadioButton
+            android:text="DEBIT CARD"
+            android:textSize="20dp"
+            android:textColor="@color/darkblue"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/radioButton6"
+            android:layout_below="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup" />
+        <RadioButton
+            android:text="NET BANKING"
+            android:textSize="20dp"
+            android:textColor="@color/darkblue"
+            android:textStyle="bold|italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="13dp"
+            android:id="@+id/radioButton7"
+            android:layout_below="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_toEndOf="@+id/radioGroup" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:textColor="@color/darkblue"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold|italic"
+            android:text="NAME ON CARD"
+            android:id="@+id/textView101" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            android:layout_height="35dp"
+            android:textColor="@color/darkblue"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold|italic"
+            android:text="CARD NUMBER"
+            android:id="@+id/textView102" />
+        <TextView
+            android:layout_width="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="35dp"
+            android:textColor="@color/darkblue"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold|italic"
+            android:text="CVV"
+            android:id="@+id/textView103" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="275dp">
+
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:background="@drawable/roundtextview"
+            android:paddingLeft="10dp"
+            android:id="@+id/EditText101" />
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:background="@drawable/roundtextview"
+            android:id="@+id/EditText102" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:background="@drawable/roundtextview"
+            android:paddingRight="5dp"
+            android:id="@+id/EditText103" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="340dp"
+    android:layout_height="70dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:textStyle="bold|italic"
+        android:text="EXPIRATION DATE"
+        android:id="@+id/textView104" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_height="40dp">
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:textStyle="bold"
+        android:hint="MONTH"
+        android:visibility="gone"
+        android:layout_marginLeft="50dp"
+        android:textSize="15dp"
+        android:paddingRight="5dp"
+        android:textColorHint="@color/darkblue"
+        android:background="@drawable/roundtextview"
+        android:paddingLeft="10dp"
+        android:id="@+id/EditText104" />
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:textSize="30dp"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:text="/"
+        android:textStyle="bold|italic"
+        android:textColor="@color/darkblue"
+        android:id="@+id/textView105" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:textSize="15dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/darkblue"
+        android:textStyle="bold"
+        android:hint="YEAR"
+        android:background="@drawable/roundtextview"
+        android:id="@+id/EditText105" />
+
+</LinearLayout>
+</LinearLayout>
+
+    <Button
+        android:text="CONTINUE"
+        android:textStyle="bold|italic"
+        android:textColor="@color/darkblue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:background="@drawable/roundtextview"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
